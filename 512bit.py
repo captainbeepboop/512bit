@@ -76,7 +76,7 @@ def update_history(pixel):
             file.write(current_time+" - "+str(pixel)+" - "+str(colours[pixel])+"\n")        
 
 def start_history():
-    with open("/home/cris-edwards/Desktop/history.txt", 'w') as file:
+    with open("/home/cris-edwards/Desktop/history.txt", 'a') as file:
             file.write(time.strftime('%x %X')+"\n")
             
 def check_time():
