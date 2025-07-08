@@ -14,5 +14,5 @@ import os
 
 os.system('git pull')
 os.system('git add history.txt')
-os.system('git commit -m "update history"')
+os.system('git commit -m "hello from 512-bit"')
 os.system('git push')
