@@ -78,6 +78,10 @@ def update_history(pixel):
 def start_history():
     with open("/home/cris-edwards/Desktop/history.txt", 'a') as file:
             file.write(time.strftime('%x %X')+"\n")
+            for i in range (64):
+                file.write(colours[i]+"-")
+                file.write("\n")
+             
             
 def check_time():
     global last_update
@@ -106,13 +110,14 @@ def check_switches():
                         update_history(pixel)
             GPIO.output(row_pins[y], GPIO.LOW)
         GPIO.output(column_pins[x], GPIO.LOW)
+     
 
 ######################################## the program
 
-start_history()
 clear_screen()
 startup = 1
 check_switches()
+start_history()
 startup = 0
 
 try:
