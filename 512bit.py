@@ -79,7 +79,7 @@ def start_history():
     with open("/home/cris-edwards/Desktop/history.txt", 'a') as file:
             file.write(time.strftime('%x %X')+"\n")
             for i in range (64):
-                file.write(colours[i]+"-")
+                file.write(str(colours[i])+"-")
                 file.write("\n")
              
             
