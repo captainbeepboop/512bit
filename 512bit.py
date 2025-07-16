@@ -80,7 +80,7 @@ def start_history():
             file.write(time.strftime('%x %X')+"\n")
             for i in range (64):
                 file.write(str(colours[i])+"-")
-                file.write("\n")
+            file.write("\n")
              
             
 def check_time():
